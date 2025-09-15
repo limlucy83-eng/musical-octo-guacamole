@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    line-height: 1.6;
+    color:black;
+    background-color:gray;
+}
+
+header {
+    background-color: palevioletred;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+section {
+    padding: 4rem 2rem;
+    margin-top: 60px; 
+}
+
+#hero {
+    background:url(pink4.jpg);
+    color: black;
+    text-align: center;
+    padding: 6rem 1rem;
+    max-height: none;
+
+}
+
+.hero-content {
+    max-width: 100px;
+    margin: 0 auto;
+    font-size: 100%;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+#hero h1 {
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+#About-me, #projects, #interests, #contact {
+    background-color:lightblue;
+    margin: 2rem auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-image: url(pic3.webp);
+}
+
+#About-me h2, #projects h2, #interests h2, #contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: black;
+    font-size: larger;
+}
+
+.About-me-content p {
+    font-family: 'Arial';
+    color: black;
+    font-size: larger;
+}
+
+.About-me-content  {
+    padding: 0 2rem 2rem;
+}
+
+.About-me-content h3 {
+    margin-top: 1.5rem;
+    color:black
+}
+
+.About-me-content ul {
+    margin-left: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 0 2rem 2rem;
+
+}
+
+.project {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+    color: black;
+}
+
+#interests p {
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 1.1rem;
+}
+
+#contact ul {
+    list-style: none;
+    text-align: center;
+    color: red;
+}
+
+#contact p{
+    color: red;
+    font-size: large;
+    text-align: center;
+    font-family: 'Times New Roman';
+}
+
+#contact ul li {
+    margin: 0.5rem 0;
+    color: black;
+}
+
+footer {
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+    #hero p {
+        font-size: 1rem;
+    }
+    section {
+        padding: 2rem 1rem;
+    }
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
